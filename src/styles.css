@@ -1,7 +1,7 @@
 /* Global Styles */
 
 * {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   color: #616161;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -17,7 +17,7 @@ body {
   flex-direction: row;
 }
 
-router-outlet + *  {
+router-outlet + * {
   padding: 0 16px;
 }
 
@@ -31,7 +31,12 @@ h2 {
   font-size: 20px;
 }
 
-h1, h2 {
+h3 {
+  font-size: 16;
+}
+
+h1,
+h2 {
   font-weight: lighter;
 }
 
@@ -58,7 +63,7 @@ input {
   border-radius: 2px;
   padding: 8px;
   margin-bottom: 16px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
 }
 
 label {
@@ -70,11 +75,12 @@ label {
 }
 
 /* Button */
-.button, button {
+.button,
+button {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
   background-color: #1976d2;
@@ -82,26 +88,41 @@ label {
   border: none;
 }
 
-.button:hover, button:hover {
+.button:hover,
+button:hover {
   opacity: 0.8;
   font-weight: normal;
 }
 
-.button:disabled, button:disabled {
+.button:disabled,
+button:disabled {
   opacity: 0.5;
   cursor: auto;
 }
 
-/* Fancy Button */
+/* Fancy Buttons */
 
-.fancy-button {
+.topbar-button {
   background-color: white;
-  color: #1976d2;
+  color: #048100;
 }
 
-.fancy-button i.material-icons {
-  color: #1976d2;
+.topbar-button i.material-icons {
+  color: #048100;
   padding-right: 4px;
+}
+
+.userlist-button {
+  padding: 16px;
+  padding-left: 48px;
+  background-color: #eeeeee;
+  font-size: 16px;
+  color: #048100;
+}
+
+.userlist-button i.material-icons {
+  color: #048100;
+  padding-left: 4px;
 }
 
 /* Top Bar */
@@ -109,7 +130,7 @@ label {
 app-top-bar {
   width: 100%;
   height: 68px;
-  background-color: #1976d2;
+  background-color: #048100;
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -122,21 +143,25 @@ app-top-bar h1 {
   margin: 0;
 }
 
+/* .fancy-app-top-bar h1 i.material-icons { //Perhaps add a tree icon in the top bar?
+  color: #058d00;
+  padding-right: 4px;
+} */
+
 /* Checkout Cart, Shipping Prices */
 
-.cart-item, .shipping-item {
-  width: 100%;
-  min-width: 400px;
-  max-width: 450px;
+.cart-item,
+.shipping-item,
+.user-item {
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 16px 32px;
+  padding: 4px 16px 4px 32px;
   margin-bottom: 8px;
   border-radius: 2px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

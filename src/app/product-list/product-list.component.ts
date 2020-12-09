@@ -1,14 +1,22 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
-import { products } from "../products";
+// import { products } from "../products";
+import { UsersService } from "../users.service";
 
 @Component({
   selector: "app-product-list",
   templateUrl: "./product-list.component.html",
   styleUrls: ["./product-list.component.css"]
 })
-export class ProductListComponent {
-  products = products;
+export class ProductListComponent implements OnInit {
+  users;
+  // products = products;
+
+  constructor(private usersService: UsersService) {}
+
+  ngOnInit() {
+    this.users = this.usersService.getUsers();
+  }
 
   share() {
     window.alert("The product has been shared!");

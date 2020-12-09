@@ -1,0 +1,15 @@
+{
+  "username": "zdenning",
+  "list": [
+    {
+      "name": "bazooka",
+      "linkOrNotes": "the bigger the better",
+      "bought": false
+    },
+    {
+      "name": "sweater",
+      "linkOrNotes": "the cuter the better",
+      "bought": false
+    }
+  ]
+}

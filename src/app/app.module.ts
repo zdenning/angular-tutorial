@@ -12,6 +12,9 @@ import { ProductDetailsComponent } from "./product-details/product-details.compo
 import { CartService } from "./cart.service";
 import { CartComponent } from "./cart/cart.component";
 import { ShippingComponent } from "./shipping/shipping.component";
+import { UsersService } from "./users.service";
+import { ItemsService } from "./items.service";
+import { ChristmasListComponent } from "./christmas-list/christmas-list.component";
 
 @NgModule({
   imports: [
@@ -22,7 +25,8 @@ import { ShippingComponent } from "./shipping/shipping.component";
       { path: "", component: ProductListComponent },
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
-      { path: "shipping", component: ShippingComponent }
+      { path: "shipping", component: ShippingComponent },
+      { path: "list/:username", component: ChristmasListComponent }
     ])
   ],
   declarations: [
@@ -32,10 +36,11 @@ import { ShippingComponent } from "./shipping/shipping.component";
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    ChristmasListComponent
   ],
   bootstrap: [AppComponent],
-  providers: [CartService]
+  providers: [CartService, UsersService, ItemsService]
 })
 export class AppModule {}
 

@@ -1,25 +1,26 @@
-<h2>Products</h2>
+<p></p>
+<div class="user-item" *ngFor="let user of users | async">
+  <h3>{{user.firstName}} {{user.lastName}}</h3>
 
-<div *ngFor="let product of products; index as productId">
-  <h3>
-    <a
-      [title]="product.name + ' details'"
-      [routerLink]="['/products', productId]"
-    >
-      {{product.name}}
+  <a routerLink="/cart" class="button userlist-button"
+    >View List<i class="material-icons">redeem</i></a
+  >
+  <!-- <h3>
+    <a [title]="product.name + ' details'" [routerLink]="['/list', username]">
+      {{user.username}}
     </a>
-  </h3>
+  </h3> -->
 
-  <p *ngIf="product.description">
-    Description: {{product.description}}
-  </p>
+  <!-- <p *ngIf="item.linkOrNotes">
+    {{item.linkOrNotes}}
+  </p> -->
 
-  <button (click)="share()">
+  <!-- <button (click)="share()">
     Share
   </button>
 
   <app-product-alerts [product]="product" (notify)="onNotify()">
-  </app-product-alerts>
+  </app-product-alerts> -->
 </div>
 
 <!-- 
