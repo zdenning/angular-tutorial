@@ -16,6 +16,7 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit() {
     this.users = this.usersService.getUsers();
+    console.warn(this.users);
   }
 
   share() {

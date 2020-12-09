@@ -2,7 +2,7 @@
 <div class="user-item" *ngFor="let user of users | async">
   <h3>{{user.firstName}} {{user.lastName}}</h3>
 
-  <a routerLink="/cart" class="button userlist-button"
+  <a [routerLink]="['/list', user.username]" class="button userlist-button"
     >View List<i class="material-icons">redeem</i></a
   >
   <!-- <h3>

@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 export class ItemsService {
   constructor(private http: HttpClient) {}
 
-  getUsers() {
+  getList() {
     return this.http.get("/assets/items.json");
   }
 }

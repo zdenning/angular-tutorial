@@ -1,0 +1,12 @@
+<h3>{{firstName}}'s Christmas Wish List</h3>
+
+<p>Tap item to view details</p>
+
+<div
+  class="christmas-list-item"
+  *ngFor="let item of items | async; index as itemId"
+  (click)="onSelect(item)"
+  [routerLink]="['/products', item.name]"
+>
+  <p>{{item.name}}</p>
+</div>

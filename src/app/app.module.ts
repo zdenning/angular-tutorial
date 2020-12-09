@@ -26,7 +26,7 @@ import { ChristmasListComponent } from "./christmas-list/christmas-list.componen
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
       { path: "shipping", component: ShippingComponent },
-      { path: "list/:username", component: ChristmasListComponent }
+      { path: "list/:user.username", component: ChristmasListComponent }
     ])
   ],
   declarations: [

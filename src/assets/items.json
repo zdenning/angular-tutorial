@@ -1,15 +1,27 @@
-{
-  "username": "zdenning",
-  "list": [
+[
     {
-      "name": "bazooka",
-      "linkOrNotes": "the bigger the better",
+      "name": "Bazooka",
+      "linkOrNotes": "The bigger the better",
       "bought": false
     },
     {
-      "name": "sweater",
-      "linkOrNotes": "the cuter the better",
+      "name": "Sweater",
+      "linkOrNotes": "The cuter the better",
+      "bought": false
+    },
+    {
+      "name": "A puppy",
+      "linkOrNotes": "The cuter the better",
+      "bought": false
+    },
+    {
+      "name": "A piano",
+      "linkOrNotes": "The cuter the better",
+      "bought": false
+    },
+    {
+      "name": "A pillow",
+      "linkOrNotes": "The cuter the better",
       "bought": false
     }
-  ]
-}
+]
